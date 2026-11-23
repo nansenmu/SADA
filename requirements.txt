@@ -1,0 +1,13 @@
+# Python 3.12; versions recorded on the current experiment server.
+# Install the CUDA-compatible PyTorch build separately.
+numpy==2.3.2
+pandas==2.3.3
+scipy==1.17.1
+scikit-learn==1.8.0
+scikit-survival==0.27.0
+h5py==3.16.0
+einops==0.8.2
+transformers==5.9.0
+networkx==3.5
+nystrom-attention==0.0.14
+threadpoolctl==3.6.0

@@ -221,3 +221,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local research inputs and generated outputs
+/datasets_csv/
+/cohort/
+/results/
+/cluster_cache/
+/features/
+*.pt
+*.pth
+*.h5
+*.hdf5
+*.npz
+*.pkl
+*.log
+.env

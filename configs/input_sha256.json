@@ -1,0 +1,37 @@
+{
+  "blca": {
+    "datasets_csv/metadata/combine_signatures.csv": "9bcdb5eac89fb505ea867b766d536f1236249b6357ec8256665cc9f2e40387f5",
+    "datasets_csv/pathway_compositions/combine_comps.csv": "89f0c7f4519b9e49828a8b868f60e2846759aaa35328bf0c60aa99573d71cd16",
+    "datasets_csv/raw_rna_data/combine/blca/rna_clean.csv": "0b4505be84e3f2532af84b6fdf44e771e3b21456360edc3b6fa95d7b8d78a05c",
+    "datasets_csv/clinical_data/tcga_blca_clinical.csv": "a883599a53884e1390d772213fdf70b2512a3f492233e4dbb26f520ab706446f",
+    "datasets_csv/metadata/tcga_blca.csv": "e221adff81ce0dd61e3de54521415a495c2a0579cfc0638a69fb74e5052ecc8c"
+  },
+  "brca": {
+    "datasets_csv/metadata/combine_signatures.csv": "9bcdb5eac89fb505ea867b766d536f1236249b6357ec8256665cc9f2e40387f5",
+    "datasets_csv/pathway_compositions/combine_comps.csv": "89f0c7f4519b9e49828a8b868f60e2846759aaa35328bf0c60aa99573d71cd16",
+    "datasets_csv/raw_rna_data/combine/brca/rna_clean.csv": "68fada1e177630e3d2b742b7cc4d210974d886585b6890a9c0b2f9c7dfdbeb82",
+    "datasets_csv/clinical_data/tcga_brca_clinical.csv": "f02d7549d515fa9213d0572a71dacb32cd02f7f9f414a3970cae4a792aa883cd",
+    "datasets_csv/metadata/tcga_brca.csv": "211b57fb130de5b21b53492f2473a4ab13823ac99f82c15a45f950ee3a7e9caa"
+  },
+  "coadread": {
+    "datasets_csv/metadata/combine_signatures.csv": "9bcdb5eac89fb505ea867b766d536f1236249b6357ec8256665cc9f2e40387f5",
+    "datasets_csv/pathway_compositions/combine_comps.csv": "89f0c7f4519b9e49828a8b868f60e2846759aaa35328bf0c60aa99573d71cd16",
+    "datasets_csv/raw_rna_data/combine/coadread/rna_clean.csv": "b109e1fc502e49ecdce49cf767daf47ac779f017c3ddf3a68cf0023fe18599c9",
+    "datasets_csv/clinical_data/tcga_coadread_clinical.csv": "54501834376f93d52fb5d218d28eef9b3ab6c18aa86a367a790f234716a52131",
+    "cohort/metadata.csv": "8e08490b8a44d35590dc5eec3474caa12d6b63db6815edab8b12d7d797003eba"
+  },
+  "hnsc": {
+    "datasets_csv/metadata/combine_signatures.csv": "9bcdb5eac89fb505ea867b766d536f1236249b6357ec8256665cc9f2e40387f5",
+    "datasets_csv/pathway_compositions/combine_comps.csv": "89f0c7f4519b9e49828a8b868f60e2846759aaa35328bf0c60aa99573d71cd16",
+    "datasets_csv/raw_rna_data/combine/hnsc/rna_clean.csv": "200932df30abdd6e7b7012e59111ae9888ba4cf43e3ead6c69f751276b1da8a2",
+    "datasets_csv/clinical_data/tcga_hnsc_clinical.csv": "cddb0735f3dda7bf40ee77622fe250e9d30568272e7ac4c65a8333bb78952f10",
+    "datasets_csv/metadata/tcga_hnsc.csv": "f7f6ed2985e121fdec270caea15ebd6a7d69e7791bb81432e84ea4b4375db4fb"
+  },
+  "stad": {
+    "datasets_csv/metadata/combine_signatures.csv": "9bcdb5eac89fb505ea867b766d536f1236249b6357ec8256665cc9f2e40387f5",
+    "datasets_csv/pathway_compositions/combine_comps.csv": "89f0c7f4519b9e49828a8b868f60e2846759aaa35328bf0c60aa99573d71cd16",
+    "datasets_csv/raw_rna_data/combine/stad/rna_clean.csv": "dda154a262abc4d907f6bb2602486b38d31096233f338f93c7c5a1b953a1da3d",
+    "datasets_csv/clinical_data/tcga_stad_clinical.csv": "270dfd3ab649ee297273eb7f0bfe9b933d356f7f830b62ff10ef971e42c004bc",
+    "datasets_csv/metadata/tcga_stad.csv": "d8244da5ef41502c2be4fd3acf3c61856fab0ce7358540da62eeee75fd6ec8b8"
+  }
+}

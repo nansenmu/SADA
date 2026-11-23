@@ -1,0 +1,3 @@
+# The unchanged historical data loader imports DGL; the SADA path does not use graphs.
+--find-links https://data.dgl.ai/wheels/torch-2.4/cu121/repo.html
+dgl==2.4.0+cu121
