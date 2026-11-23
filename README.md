@@ -111,37 +111,3 @@ python scripts/run.py train --cohort blca \
 Remove `--dry-run` to train. Supported cohorts are `brca`, `blca`, `coadread`, `hnsc`, and `stad`. Each invocation runs all five folds in the original order. Starting each fold in a separate process resets the random-number sequence and does not match the reference procedure.
 
 Use the launcher rather than calling `main.py` with its defaults. It clears inherited experimental environment variables and explicitly fixes the SADA settings. It checks source/split hashes, input hashes, and the K32 cache metadata before training. The data loader additionally checks feature fingerprints against the caches.
-
-## Evaluation
-
-Use the directory containing `s_0_checkpoint.pt` through `s_4_checkpoint.pt`:
-
-```bash
-python scripts/run.py evaluate --cohort blca \
-  --features /path/to/blca_features_uni_v1 \
-  --clusters /path/to/blca_cluster_cache_k32_v1 \
-  --checkpoints /path/to/experiment
-```
-
-Add `--fold 0` to evaluate one fold. Evaluation uses all validation patches, the original training-fitted RNA normalization, and the fused logits. Predictions and `evaluation.json` are written to a new directory under `results/`.
-
-The reported values use each fold's checkpoint with the highest validation C-index among 30 epochs, not its last checkpoint. This is internal cross-validation; the validation folds also determine checkpoint selection.
-
-| Cohort | Mean C-index | Population SD |
-|---|---:|---:|
-| BRCA | 0.804424 | 0.074458 |
-| BLCA | 0.678013 | 0.035374 |
-| COADREAD | 0.789187 | 0.103366 |
-| HNSC | 0.660323 | 0.061206 |
-| STAD | 0.684913 | 0.064205 |
-| Cohort average | 0.723372 | |
-
-`configs/reference_scores.json` records the 25 fold scores and selected epochs. These values were checked against the archived epoch histories. Source/split verification is distinct from retraining: matching settings alone does not establish identical results across software versions and hardware.
-
-Release checks confirmed all 25 effective train/validation patient lists and their ordering, a synthetic eight-patient joint-loss update, and square-root sampling without replacement. A CPU prediction for one complete BLCA validation patient matched its archived checkpoint prediction within 2.4e-7 in risk score. The 25 training runs were not repeated for this release.
-
-## Acknowledgments and third-party code
-
-The data pipeline, multimodal attention, and supporting modules build on [SurvPath](https://github.com/mahmoodlab/SurvPath). Please cite its CVPR 2024 paper, *Modeling Dense Multimodal Interactions Between Biological Pathways and Histology for Survival Prediction*, when using the inherited components. UNI features follow *Towards a general-purpose foundation model for computational pathology* (Nature Medicine, 2024).
-
-See `THIRD_PARTY_NOTICES.md` for upstream attribution and license information.
